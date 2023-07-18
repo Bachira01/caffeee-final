@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+
+/* inicio */
+
+header {
+background-color: #2E46AF;
+display: block;
+}
+header .header_logo {
+  height: 60px;
+  color: white;
+  margin: auto;
+}
+header .header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 21px 10px 21px;
+}
+header .header .header_icon--default {
+color: #e2e2e2;
+padding: 5px;
+}
+header .header_under {
+width: 100vw;
+display: flex;
+justify-content: center;
+}
+header .header_under ul li {
+display: inline-block;
+list-style: none;
+align-items: center;
+padding: 10px;
+}
+header .header_under ul li a {
+text-decoration: none;
+color: #e2e2e2;
+}
+
+/*  menu */
+.sidebar {
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #2E46AF; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+/* links del menu */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e2e2e2;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Boton para abrir la barra*/
+.openbtn {
+  
+  cursor: pointer;
+  background-color: #2E46AF;
+  color: white;
+  padding: 30px 20px;
+  border: none;
+
+}
+
+.openbtn:hover {
+  background-color: #2E46AF
+}
+
+.openbtn img {
+  height: 60px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/* fin */
+
+/* inicio descripcio */
+
+
+.descripcion {
+display: flex;
+grid-template-columns: repeat(auto-fit, minmax(17rem,auto));
+align-items: center;
+gap: 1.5rem;
+background-color: #69B6D2;
+height: 500px;
+border-radius: 0px 0px 50px 50px;
+padding: 70px;
+}
+
+
+.flex-estrellas {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  gap: 5px;
+
+}
+
+
+
+
+.descripcion-img img{
+  border-radius: 50px;
+  width: 100%;
+  height: 420px;
+  
+}
+
+.descripcion-text h2{
+ font-size: 1.8rem;
+ text-transform: uppercase;
+ 
+}
+
+.descripcion-text p{
+  font-size: 1rem;
+  margin: 0.5rem 0 1.1rem;
+}
+
+.descripcion-boton  {
+  width: 120px;
+  height: 38px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #E0BDDD;
+  margin-left: 100px;
+  text-align: center;
+}
+
+
+.descripcion-boton-carrito {
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #E0BDDD;
+  margin-left: 50px;
+  text-align: center;
+}
+
+
+.img-banner-descripcion img{
+height: 100%;
+width: 130rem;
+border-radius: 50px;
+padding: 20px;
+margin-right: 20px;
+display: flex;
+
+}
+
+input,
+textarea,
+select {
+margin: 10px 0 0 0;
+width: 100%;
+min-height: 2em;
+}
+
+input, textarea {
+background-color: #f1f1fa;
+border: 1px solid #f4f4f8;
+color: #f9f3f3;
+}
+
+.inline {
+width: unset;
+margin: 0 0.5em 0 0;
+vertical-align: middle;
+}
+      input[type="submit"] {
+        display: block;
+        width: 4%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #E0BDDD;
+        border-color: white;
+        border-radius: 50px;
+        min-width: 300px;
+      }
+      
+.comentarios {
+padding: 30px;
+display: flex;
+flex-direction: column;
+}        
+
+
+.comentarios-personas{
+
+text-align: start;
+text-overflow: clip;
+margin-top: 5px;
+
+
+}
+
+
+
+
+
+/* final descripcion */
+
+footer{
+  margin-top: 100px;
+  color: rgba(239, 277, 196, 1);
+  text-align: center;
+  background-color: rgba(46, 70, 175, 1) ;
+  padding: 68px;
+}
