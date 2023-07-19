@@ -440,7 +440,6 @@ div#comparison {
       font-weight: 400; 
       color: #ffffff; 
       background:white;
-      
     }
 
 .comunidadkoti{
@@ -457,41 +456,64 @@ div#comparison {
   flex-direction: column;
 }
 
-.gatonewsletter {
-  width: 137px;
-  height: 147px;
-  position: absolute;
-  margin-left: 1030px;
-  margin-top: -70px;
-  transform: scaleX(-1);
-}
-
 .btn{
   background-color: black;
- display: block;
- margin-left: auto;
- margin-right: auto;
- margin-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
 }
 
-.suscribite{
-  background-color: white;
+/* Inicio seccion suscripcion */
+
+.comumidad-koti {
+  height: 50vh;
+  width: 100vw;
+
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  flex-wrap: wrap;
+  flex-direction:row;
 
-  margin-top: 100px;
-  padding: 90px;
+  justify-content: center;
+  align-items: flex-end;
+
+  padding: 5rem;
 }
 
-.tumail {
-  width: 349px;
-  height: 38px;
-  border-radius: 50px;
-  border: 1px solid #000;
+
+.info-comunidad {
+  display: inline-block;
   text-align: left;
+  justify-content: center;
+  padding-right: 50px;
+
+  max-width: 40vw;
 }
+
+.info-comunidad h3 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.info-comunidad p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info-comunidad--suscripcion input{
+  border-radius: 20px;
+  border: 1px solid rgb(74, 74, 74);
+  padding: 8px;
+}
+
+.info-comunidad--suscripcion input{
+
+}
+
+
+
+
+/* Fin seccion suscripcion */
 
 .textocafe{
   text-align: center;
