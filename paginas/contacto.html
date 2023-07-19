@@ -3,171 +3,116 @@
 
 <head>
 
-  <!-- Aca le agregué tambien el favicon! -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="img/kofi.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="icon" type="image/x-icon" href="img/kofi.png">
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
-  <script src="https://kit.fontawesome.com/c905148d15.js" crossorigin="anonymous"></script>
-  <script>function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
+    <link rel="icon" type="image/x-icon" href="img/kofi.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <script src="https://kit.fontawesome.com/c905148d15.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-    }</script>
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="img/kofi.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+    <script>function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }</script>
 
 </head>
 
 <body>
-  <header>
 
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <li><a href="/index.html">HOME</a></li>
+    <header>
 
-      <li><a href="/paginas/coffee.html">CAFÉ</a></li>
-      <li><a href="/paginas/te.html">TÉ</a></li>
-      <li><a href="/paginas/matcha.html">MATCHA</a></li>
-      <li><a href="/paginas/combos.html">COMBOS</a></li>
-      <li><a href="/paginas/merch.html">MERCH</li></a>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="../index.html">Home</a></li>
 
-      <li><a href="/paginas/comunidadkoti.html">COMUNIDAD KOTI</li></a>
-      <li><a href="/paginas/about.html">ABOUT</li></a>
-      <li><a href="/paginas/contacto.html">CONTACTO</li></a>
+            <li><a href="paginas/coffee.html">Café</a></li>
+            <li><a href="paginas/te.html">Té</a></li>
+            <li><a href="paginas/matcha.html">Matcha</a></li>
+            <li><a href="paginas/combos.html">Combos</a></li>
+            <li><a href="paginas/merch.html">Merch</li></a>
+
+            <li><a href="paginas/comunidadkoti.html">Comunidad Koti</li></a>
+            <li><a href="paginas/about.html">Sobre nosotros</li></a>
+            <li><a href="paginas/contacto.html">Contactanos</li></a>
+        </div>
+
+        <!-- no sacar, con esto funciona el menu hamburguesa -->
+        <div id="main" class="logo_header">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+            <img src="../img/reduccionlogoblanco.png" alt="" height="80px">
+        </div>
+    </header>
+
+    <!-- SEO -->
+    <h1 style="visibility: hidden;">Contacto - Kofi & Ti</h1>
+
+    <div class="contenedor">
+
+        <h2 class="titulo">Ponte en contacto con nosotros</h2>
+
+        <form action="post" class="form">
+            <div class="form_input">
+                <label for="email">Correo electronico</label>
+                <input type="email" placeholder="Correo electronico">
+            </div>
+            <div class="form_input">
+                <label for="text">Nombre y apellido</label>
+                <input type="text" placeholder="Nombre y apellido">
+            </div>
+            <div class="form_input mensaje">
+                <label for="email">Mensaje</label>
+                <input type="text" placeholder="Escribe aqui el contenido de tu consulta">
+            </div>
+            <button type="submit" class="boton">Enviar mensaje <span><i class="fa-solid fa-chevron-right"
+                        style="color: #772e71;"></i></span></button>
+        </form>
+
+        <section class="other_contacts">
+
+            <article class="other_contacts--texts">
+                <h3>Prensa y colaboraciones</h3>
+                <p>Para contactarte con nosotros en el sector de prensa o colaboraciones de <br>social media
+                    escribinos
+                    <b>kofiandti@cafe.com</b>
+                </p>
+            </article>
+
+            <article class="other_contacts--texts">
+                <h3>Soporte Kofi & Ti</h3>
+                <p>Si tuviste algún problema con tu compra, envianos tu número de orden a <b>kofiandti@cafe.com</b>
+                    ¡estamos
+                    para ayudarte!</p>
+            </article>
+
+        </section>
     </div>
-
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">&#9776; <img src="/img/reduccionlogoblanco.png" alt=""></button>
-
-    </div>
-
-  </header>
-  <!-- por aca comence a armar lo que seria mi cajita de contacto-->
-  <div class="textocontacto1">
-    <h2 style="text-align: center;margin-top: 50px; margin-bottom: 20px;">¿Te gustaría formar parte del equipo o
-      enviarnos una propuesta? <br>¿Tenes alguna
-      duda? ¡Contactanos! </h2>
-    <div class="form-container">
-      <h3 style="text-align: center;font-weight: 500;line-height: 50px;font-size: 30px;">CONECTATE CON NUESTRO EQUIPO
-      </h3>
-      <br>
-      <form class="datoscontacto" target="_self" onSubmit="alert('Gracias por contactarnos!')">
-        <input class="emailcontacto" type="email" name="contactEmail" id="1" placeholder="Tu email" value="Tu Email"
-          required>
-        <input class="nombrecontacto" type="text" name="contactName" id="2" placeholder="Tu Nombre" value="Tu Nombre"
-          required>
-        <input class="comentariocontacto" type="text" name="contactComment" id="4" placeholder="Tu comentario"
-          value="Tu Comentario" s required>
-        <input class="enviarcontacto" type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-
-  <h3 style="text-align: left;padding-left: 50px;padding-top: 50px;">Prensa y Colaboraciones</h3>
-  <i style="text-align: left;padding-left: 50px;float:left;">Para contactarte con nosotros en el sector de prensa o
-    colaboraciones de <br>social media escribinos a <!--la <b> lo pone en negrita--><b>kofiandti@cafe.com</b></i>
-
-  <br>
-
-  <h3 style="text-align: left;padding-left: 50px;margin-top: 50px;">Soporte Kofi & Ti</h3>
-  <i style="text-align: left;float:left;padding-left: 50px;"> Si tuviste algún problema con tu compra, envianos tu
-    número de orden a <br> <b>kofiandti@cafe.com</b> ¡estamos para ayudarte!</i>
-
-  <style>
-    body {
-      text-align: center;
-      padding-top: 180;
-    }
-
-    .form-container {
-      border: 1px solid black;
-      border-radius: 50px;
-      padding: 30px;
-      width: 800px;
-      height: 500px;
-      display: inline-block;
-    }
-
-    .emailcontacto {
-      width: 720px;
-      height: 65px;
-      border-radius: 50px;
-      border: 1px solid #000;
-    }
-
-    .nombrecontacto {
-      width: 720px;
-      height: 65px;
-      border-radius: 50px;
-      border: 1px solid #000;
-      margin-top: 10px;
-    }
-
-    .comentariocontacto {
-      width: 722px;
-      height: 145px;
-      border-radius: 50px;
-      border: 1px solid #000;
-      margin-top: 10px;
-    }
-
-    .enviarcontacto {
-      border-radius: 50px;
-      border: 1px solid #000;
-      background: #E0BDDD;
-      width: 129px;
-      height: 45px;
-      margin-top: 17px;
-    }
-  </style>
-  <!-- Le quise agregar una linda gradiente para resaltar que es una caja de contacto, me pareció -->
-  <style>
-    body {
-      height: 1300px;
-      background: linear-gradient(141deg, #2E46AF 0%, #1fc8db 51%, #2cb5e8 75%);
-    }
-  </style>
-
-
-  <footer>
-    <img src="img/socialicons.svg" alt="redes">
-    <section class="redesespacio">
-      <ul class="textosfooter">
-        <li>Home</li>
-        <li>Privacidad</li>
-        <li>Terminos y Condiciones</li>
-      </ul>
-    </section>
-
-  </footer>
-
-
-
-
-
-
 </body>
 
 </html>
