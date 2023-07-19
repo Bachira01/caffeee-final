@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/descripcion.css">
+    <link rel="stylesheet" href="/css/style.css">
     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/kofi.png">
@@ -18,13 +21,13 @@
           x.style.display = "block";
         }
       }
-      </script>
-      <script src="https://kit.fontawesome.com/c905148d15.js" crossorigin="anonymous"></script>
-      <script>function openNav() {
+    </script>
+    <script src="https://kit.fontawesome.com/c905148d15.js" crossorigin="anonymous"></script>
+    <script>function openNav() {
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
       }
-      
+  
       /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
       function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
@@ -35,29 +38,25 @@
 </head>
 <body>
     <header>
-
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">HOME</a>
-                   
-            <a href="/paginas/coffee.html">CAFÉ</a>
-            <a href="/paginas/te.html">TÉ</a></li>
-            <a href="/paginas/matcha.html">MATCHA</a>
-            <a href="/paginas/combos.html">COMBOS</a>
-            <a href="/paginas/merch.html">MERCH</a>
-        
-            <a href="/paginas/comunidadkoti.html">COMUNIDAD KOTI</a>
-            <a href="/paginas/about.html">ABOUT</a>
-            <a href="/paginas/contacto.html">CONTACTO</a>
+            <a href="/index.html">Home</a>      
+            <a href="/paginas/coffee.html">Café</a>
+            <a href="/paginas/te.html">Té</a></li>
+            <a href="/paginas/matcha.html">Matcha</a>
+            <a href="/paginas/combos.html">Combos</a>
+            <a href="/paginas/merch.html">Merch</a>
+            <a href="/paginas/comunidadkoti.html">Comunidad Koti</a>
+            <a href="/paginas/about.html">About</a>
+            <a href="/paginas/contacto.html">Contacto</a>
           </div>
-          
           <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776; <img src="/img/reduccionlogoblanco.png" alt=""></button>
-           
+            <button class="openbtn" onclick="openNav()">&#9776; <img src="/img/reduccionlogoblanco.png" alt=""></button>      
           </div>
-        
     </header>
+<main>
 
+  <article>
     <section>
 
         <section>
@@ -85,9 +84,13 @@
                     <p><button class="descripcion-boton">- 1 +</button> <button class="descripcion-boton-carrito">agregar al carrito</button></p>
                 </div>
             </section>
+          </article>
+      <article>      
         <section class="img-banner-descripcion">
             <img src="/img/bannermerch.jpg" class="img-banner-descripcion">
         </section>    
+      </article>
+    <article>
         <section class="comentarios">
             <h4>10 Reviews</h4>
         
@@ -109,12 +112,12 @@
       
       <input class="boton-cargar-mas" type="submit" value="cargar más comentarios" />
         </section>
+      </article>      
     
     
     
-    </section>
-
-
+    
+</main>
     <footer>         
       <img src="/img/socialicons.svg" alt="redes">
       <section class="redesespacio">
@@ -124,8 +127,5 @@
               <p>Terminos y Condiciones</p>
           </ul>
       </section>
-
-
-
-
 </body>
+</html>
