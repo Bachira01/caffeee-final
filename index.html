@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Kofi & Ti</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kofi & Ti</title>
+
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&display=swap');
   </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/c905148d15.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="icon" type="image/x-icon" href="img/kofi.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
   <script>
     function myFunction() {
       var x = document.getElementById("myLinks");
@@ -25,190 +33,199 @@
         x.style.display = "block";
       }
     }
-    </script>
-    <script src="https://kit.fontawesome.com/c905148d15.js" crossorigin="anonymous"></script>
-    <script>function openNav() {
+  </script>
+  <script>
+    function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
     }
-    
+
     /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
-    }</script>
-      
+    }
+  </script>
+
 </head>
+
 <body>
-    <header>
+  <header>
 
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <li><a href="index.html">HOME</a></li>
-                   
-                    <li><a href="paginas/coffee.html">CAFÉ</a></li>
-                    <li><a href="paginas/te.html">TÉ</a></li>
-                    <li><a href="paginas/matcha.html">MATCHA</a></li>
-                    <li><a href="paginas/combos.html">COMBOS</a></li>
-                    <li><a href="paginas/merch.html">MERCH</li></a>
-                    
-                    <li><a href="paginas/comunidadkoti.html">COMUNIDAD KOTI</li></a>
-                    <li><a href="paginas/about.html">ABOUT</li></a>
-                    <li><a href="paginas/contacto.html">CONTACTO</li></a>
-          </div>
-          
-          <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776; <img src="img/reduccionlogoblanco.png" alt=""></button>
-           
-          </div>
-              
-              
-            
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <li><a href="index.html">HOME</a></li>
 
-    
-    </header>
- <main>
+      <li><a href="paginas/coffee.html">CAFÉ</a></li>
+      <li><a href="paginas/te.html">TÉ</a></li>
+      <li><a href="paginas/matcha.html">MATCHA</a></li>
+      <li><a href="paginas/combos.html">COMBOS</a></li>
+      <li><a href="paginas/merch.html">MERCH</li></a>
+
+      <li><a href="paginas/comunidadkoti.html">COMUNIDAD KOTI</li></a>
+      <li><a href="paginas/about.html">ABOUT</li></a>
+      <li><a href="paginas/contacto.html">CONTACTO</li></a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; <img src="img/reduccionlogoblanco.png" alt=""></button>
+
+    </div>
+
+  </header>
+  <main>
     <div class="imagenprincipal">
-        <img src="img/imagenprincipal.jpg" alt="">
-    </div> 
-   
-   
-
-
+      <img src="img/imagenprincipal.jpg" alt="">
+    </div>
 
     <section class="wrapper">
-        <div class="container"> 
-            
-         
-           <h1>LOS FAVORITOS</h1>
-            <div class="d-flex">
-               
-                <div class="card">
-                    <div class="img__container">
-                        <img src="img/cold brew.png" alt= "salad" class="card__img">
-                        
-                    </div>
-                    <p class="card__txt">Cold Brew Starterpack</p>
-                        <p>$3500</p>   
-                        <br> 
-                        <a href="paginas/descripcion.html"><button class="agregarcold">agregar</button></a>
-                </div>
-                <div class="card">
-                    <img src="img/fresa y maracuya.png" alt="pancake" class="card__img">
-                    <p class="card__txt">Fresa y Maracuyá</p>
-                        <p>$3500</p>
-                        <br>
-                        <button class="agregarfresa">agregar</button>
-                </div>   
-                <div class="card">
-                    <img src="img/menta y jengibre.png" alt="donuts" class="card__img">
-                    <p class="card__txt">Menta y Jengibre</p>
-                        <p>$3500</p>
-                        <br>
-                        <button class="agregarmenta">agregar</button>
-                </div>
-                
-                
+      <div class="container">
+
+        <h1>LOS FAVORITOS</h1>
+        <div class="d-flex">
+
+          <div class="card">
+
+            <img src="img/cold brew.png" alt="salad" class="card__img">
+            <p class="card__txt">Cold Brew Starterpack</p>
+            <p>$3500</p>
+            <br>
+            <div class="btn-container">
+              <a href="paginas/descripcion.html"><button class="boton">agregar</button></a>
             </div>
+          </div>
+
+          <div class="card">
+            <img src="img/fresa y maracuya.png" alt="pancake" class="card__img">
+            <p class="card__txt">Fresa y Maracuyá</p>
+            <p>$3500</p>
+            <br>
+            <div class="btn-container">
+              <button class="boton">agregar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/menta y jengibre.png" alt="donuts" class="card__img">
+            <p class="card__txt">Menta y Jengibre</p>
+            <p>$3500</p>
+            <br>
+            <div class="btn-container">
+              <button class="boton">agregar</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
 
     <div class="frio">
+      <div class="imagenprincipal">
         <div class="imagenprincipal">
-            <div class="imagenprincipal">
-                <section class="banner_shop">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                           <!-- Indicators -->
-                           <ol class="carousel-indicators">
-                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                             <li data-target="#myCarousel" data-slide-to="1"></li>
-                             <li data-target="#myCarousel" data-slide-to="2"></li>
-                           </ol>
-                       
-                           <!-- Wrapper for slides -->
-                           <div class="carousel-inner" role="listbox">
-                             <div class="item active">
-                               <img src="img/nuevosproductos1.jpg" alt= width="100%" height="700">
-                                  
-                             </div>
-                       
-                             <div class="item">
-                               <img src="img/nuevosproductos2.jpg" alt= width="100%" height="700">
-                                   
-                             </div>
-               
-                             <div class="item">
-                               <img src="img/nuevosproductos3.jpg" alt= width="100%" height="700">
-                                   
-                             </div>
-               
-                        
-                           
-                             
-                       
-                           <!-- Left and right controls -->
-                           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                             <span class="sr-only">Previous</span>
-                           </a>
-                           <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                             <span class="sr-only">Next</span>
-                           </a>
-                       </div>
-                   </section>
-               
-                   
-            </div>
-        
+          <section class="banner_shop">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/nuevosproductos1.jpg" alt=width="100%" height="700">
+
+                </div>
+
+                <div class="item">
+                  <img src="img/nuevosproductos2.jpg" alt=width="100%" height="700">
+
+                </div>
+
+                <div class="item">
+                  <img src="img/nuevosproductos3.jpg" alt=width="100%" height="700">
+
+                </div>
+
+
+
+
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+          </section>
+
+
         </div>
+
+      </div>
     </div>
-       
+
     <section class="textosabor">
-        <h1 class="titulo-bold">HUELLA DE SABOR</h1>
-        <br>
-        <p>De la mano de Kofi estamos orgullosos de ofrecerles una gran variedad de 
-        blends de café cuidadosamente seleccionados para satisfacer a cualquier 
-        amante de esta bebida. Desde los cafés tostados más suaves, hasta los 
-        tostados más oscuros y audaces, nuestros blends ofrecen una amplia gama 
+      <h1 class="titulo-bold">HUELLA DE SABOR</h1>
+      <br>
+      <p>De la mano de Kofi estamos orgullosos de ofrecerles una gran variedad de
+        blends de café cuidadosamente seleccionados para satisfacer a cualquier
+        amante de esta bebida. Desde los cafés tostados más suaves, hasta los
+        tostados más oscuros y audaces, nuestros blends ofrecen una amplia gama
         de sabores y aromas que te dejarán deseando volver por más.</p>
     </section>
- 
 
-        <div class="comunidadkotihome">
-            <img src="img/comunidadkotihome.png">
-        </div>
-    
-      <br>
-   <section class="suscribite">
-        <h2>¡No te pierdas de nada!</h2>
-        <br>
-        <p>Suscribite a nuestro newsletter y recibí noticias, regalos y un 10% de descuento en tu primer pedido.</p>
-        <br>
-        <input class="tumail" type="search" value="Tu mail">  
-        <br>
-        <button class="suscribiteboton">suscribite</button>
-
-        <div class="gatonewsletter">
-            <img src="/img/gatoestirado.svg" alt="gatoestirado">
-        </div>
-
+    <section class="comunidadkotihome">
+      <img src="img/comunidadkotihome.png">
     </section>
- </main>
-    <footer>         
-        <img src="img/socialicons.svg" alt="redes">
-        <section class="redesespacio">
-            <ul class="textosfooter">
-                <li>Home</li>
-                <li>Privacidad</li>
-                <li>Terminos y Condiciones</li>
-            </ul>
-        </section>
 
-    </footer>
+    <!-- safaskjnbkjsdfbkujsdbguibsduibguisdbgiusdbngu -->
+    <section class="comumidad-koti">
+      <section class="info-comunidad">
+        <h3>¡No te pierdas de nada!</h3>
+        <p>Suscribite a nuestro newsletter y recibí noticias, regalos y un 10% de descuento en tu primer pedido.</p>
+      </section>
+
+      <div class="info-comunidad--suscripcion">
+        <input class="tumail" type="mail" placeholder="Tu mail">
+      </div>
+
+      <section class="info-comunidad--derecha">
+
+        <div class="info-comunidad_gato">
+          <img src="img/gatoestirado.svg" alt="gatoestirado">
+        </div>
+
+        <div class="info-comunidad--suscripcion">
+          <div class="btn-container">
+            <button class="boton">agregar</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <img src="img/socialicons.svg" alt="redes">
+    <section class="redesespacio">
+      <ul class="textosfooter">
+        <li>Home</li>
+        <li>Privacidad</li>
+        <li>Terminos y Condiciones</li>
+      </ul>
+    </section>
+
+  </footer>
 
 </body>
 
 <script src="script.js"></script>
+
 </html>
