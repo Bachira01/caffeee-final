@@ -98,7 +98,7 @@ header .header_under ul li a {
   cursor: pointer;
   background-color: #2E46AF;
   color: white;
-  padding: 30px 20px;
+  
   border: none;
 }
 
@@ -640,7 +640,7 @@ div#comparison {
 header {
   background-color: #2E46AF;
   display: block;
-  height: 200px;
+  height: 120px;
 }
 
 header .header{
