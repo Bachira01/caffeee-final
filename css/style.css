@@ -468,7 +468,7 @@ div#comparison {
 
 .comumidad-koti {
   height: 50vh;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
@@ -906,6 +906,7 @@ footer{
 section .banner_shop {
   display: flex;
   height: 100%;
+  width: 100%;
 }
 
 
@@ -1035,7 +1036,7 @@ section .banner_shop {
 /*RESPONSIVE */
 
 .banner_shop img{
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 
