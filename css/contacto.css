@@ -1,0 +1,166 @@
+/*  header */
+
+header {
+    background-color: #2E46AF;
+    display: flex;
+    height: 120px;
+    
+}
+  header img {
+    height: 60px;
+  }
+  header .header_under ul li {
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+  }
+  header .header_under ul li a {
+    text-decoration: none;
+    color: #e2e2e2;
+  }
+
+/*  menu */
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #2E46AF; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+
+  /* links del menu */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e2e2e2;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    cursor: pointer;
+    background-color: #2e46af00;
+    color: white;
+    border: none;
+}
+
+.openbtn img {
+    height: 60px;
+}
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* fin del header */
+
+.contenedor {
+    width: 100%;
+    margin: 0;
+
+    display:grid;
+    place-items: center;
+
+}
+
+.titulo {
+    font-size: 64px;
+    font-weight: 900;
+    padding-bottom: 3vh;
+}
+
+form {
+    min-width: 300px;
+    width: 40vw;
+}
+
+form label {
+    font-size: 16px;
+    color: #575757;
+}
+
+.form_input:not(button) {
+    padding: 0 10px 10px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input input {
+    padding: 12px;
+
+    border-radius: 20px;
+    border-color: #898989;
+}
+
+.mensaje input {
+    min-height: 20vh;
+}
+
+.boton {
+    width: fit-content;
+    height: 38px;
+
+    border-radius: 50px;
+    border: 1px solid #2f2f2f;
+
+    background-color: #E0BDDD;
+
+    text-align: center;
+    justify-content: center;
+
+    margin: 0;
+    padding-left: 20px;
+
+    font-weight: 600;
+}
+
+.boton span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.boton:hover {
+    transition: all 1s;
+    background-color: #ecb3e7;
+}
+
+.other_contacts--texts {
+    padding: 0 10px 0 0;
+}
+
+.other_contacts  h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.other_contacts  p{
+    font-size: 16px;
+    font-weight: 400;
+}

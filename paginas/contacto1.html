@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="img/kofi.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <script src="https://kit.fontawesome.com/c905148d15.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="img/kofi.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+    <script>function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }</script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="paginas/coffee.html">Café</a></li>
+            <li><a href="paginas/te.html">Té</a></li>
+            <li><a href="paginas/matcha.html">Matcha</a></li>
+            <li><a href="paginas/combos.html">Combos</a></li>
+            <li><a href="paginas/merch.html">Merch</li></a>
+
+            <li><a href="paginas/comunidadkoti.html">Comunidad Koti</li></a>
+            <li><a href="paginas/about.html">Sobre nosotros</li></a>
+            <li><a href="paginas/contacto.html">Contactanos</li></a>
+        </div>
+
+        <!-- no sacar, con esto funciona el menu hamburguesa -->
+        <div id="main" class="logo_header">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+            <img src="../img/reduccionlogoblanco.png" alt="" height="80px">
+        </div>
+    </header>
+
+    <!-- SEO -->
+    <h1 style="visibility: hidden;">Contacto - Kofi & Ti</h1>
+
+    <div class="contenedor">
+
+        <h2 class="titulo">Ponte en contacto con nosotros</h2>
+
+        <form action="post" class="form">
+            <div class="form_input">
+                <label for="email">Correo electronico</label>
+                <input type="email" placeholder="Correo electronico">
+            </div>
+            <div class="form_input">
+                <label for="text">Nombre y apellido</label>
+                <input type="text" placeholder="Nombre y apellido">
+            </div>
+            <div class="form_input mensaje">
+                <label for="email">Mensaje</label>
+                <input type="text" placeholder="Escribe aqui el contenido de tu consulta">
+            </div>
+            <button type="submit" class="boton">Enviar mensaje <span><i class="fa-solid fa-chevron-right"
+                        style="color: #772e71;"></i></span></button>
+        </form>
+
+        <section class="other_contacts">
+
+            <article class="other_contacts--texts">
+                <h3>Prensa y colaboraciones</h3>
+                <p>Para contactarte con nosotros en el sector de prensa o colaboraciones de <br>social media
+                    escribinos
+                    <b>kofiandti@cafe.com</b>
+                </p>
+            </article>
+
+            <article class="other_contacts--texts">
+                <h3>Soporte Kofi & Ti</h3>
+                <p>Si tuviste algún problema con tu compra, envianos tu número de orden a <b>kofiandti@cafe.com</b>
+                    ¡estamos
+                    para ayudarte!</p>
+            </article>
+
+        </section>
+    </div>
+</body>
+
+</html>
